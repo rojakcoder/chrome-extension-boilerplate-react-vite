@@ -11,7 +11,7 @@ const outDir = resolve(__dirname, "..", "..", "public");
 
 export default function copyContentStyle(): PluginOption {
   return {
-    name: "make-manifest",
+    name: "copy-content-style",
     buildEnd() {
       fs.copyFileSync(contentStyle, resolve(outDir, "contentStyle.css"));
 
